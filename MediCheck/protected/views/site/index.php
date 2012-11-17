@@ -15,8 +15,6 @@
 <hr>
       <div class="row-fluid marketing">
           <div class="span6" style="width: 599px; height: 349px">
-              <h4 class="offset3">What can get......</h4>
-
               <div class="row-fluid marketing offset3">
                   <div class="span6">
                       <h4>Printout of the prescription</h4>

@@ -205,3 +205,26 @@ Stack trace:
 REQUEST_URI=/MediCheck/index.php?r=patient/admin
 HTTP_REFERER=http://localhost/MediCheck/index.php?r=patient
 ---
+2012/11/17 16:18:36 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.class" is not defined.' in C:\wamp\www\MediCheck\MediCare\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('class', 'form-signin')
+#1 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'CActiveForm', Array)
+#2 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CBaseController.php(190): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\wamp\www\MediCheck\MediCare\MediCheck\protected\views\site\login.php(27): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\Med...')
+#5 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\Med...', Array, true)
+#6 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\Med...', Array, true)
+#7 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#8 C:\wamp\www\MediCheck\MediCare\MediCheck\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#9 C:\wamp\www\MediCheck\MediCare\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#14 C:\wamp\www\MediCheck\MediCare\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#15 C:\wamp\www\MediCheck\MediCare\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\MediCheck\MediCare\MediCheck\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/medicheck/medicare/MediCheck/index.php?r=site/login
+HTTP_REFERER=http://localhost/medicheck/medicare/MediCheck/index.php?r=site/contact
+---

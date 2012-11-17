@@ -11,8 +11,7 @@ body
 {
 	margin: 0 auto;
     width: 980px;
-	background: white;
-	border: 1px solid #C9E0ED;
+	margin-top:40px;
 }
 .container{
     margin: 0 auto;

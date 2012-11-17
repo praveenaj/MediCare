@@ -12,7 +12,20 @@ $this->menu=array(
 	array('label'=>'Manage Doctor', 'url'=>array('admin')),
 );
 ?>
+<div class="span12">
 
-<h1>Create Doctor</h1>
+ <h1><center>Register as a Doctor</center></h1>
+ </div>
+ 
+<div class="span4"></div>
+            
+            <div class="span4">
+       		 
+                    
+					<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+                
+       
+            </div>
+            
+            <div class="span4"></div>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
